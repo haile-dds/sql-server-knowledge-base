@@ -50,6 +50,7 @@ Dùng cho học tập, ôn tập và áp dụng thực tế trong môi trường
 ---
 
 ## 📂 Repository Structure
+```text
 sql-server-knowledge-base/
 │
 ├── README.md
@@ -73,7 +74,7 @@ sql-server-knowledge-base/
 └── backup-restore/
 ├── README.md
 └── backup-types.md
-
+```
 
 ---
 
