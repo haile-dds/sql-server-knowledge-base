@@ -1,96 +1,90 @@
 # 📘 SQL Server Knowledge Base
 
-Kho ghi chú cá nhân về **SQL Server internals, performance tuning, indexing, execution plans, locking, TempDB, backup/restore**  
-Dùng cho học tập, ôn tập và áp dụng thực tế trong môi trường production.
+A personal knowledge base for **SQL Server internals, performance tuning, indexing, execution plans, locking, TempDB, and backup/restore**.
 
-> 🎯 Mục tiêu: Hiểu **bản chất SQL Server vận hành thế nào**, không chỉ “viết query chạy được”.
+> 🎯 Goal: Understand **how SQL Server really works**, not just how to write queries that run.
 
 ---
 
-## 🧠 Nội dung chính
+## 🧠 Main Topics
 
 ### 🔹 Execution Plans & Query Optimizer
 - [Execution Plan – Properties Reference](execution-plans/execution-plan-properties.md)
-- [Execution Plan Reading Checklist](execution-plans/README.md)
+- [Execution Plans Overview](execution-plans/README.md)
 - Cardinality Estimation *(coming soon)*
 
 ---
 
 ### 🔹 Indexing & Query Performance
 - [Index Design Checklist](indexing/index-design-checklist.md)
-- [Filtered Index](indexing/filtered-index.md)
+- Filtered Index *(coming soon)*
 - Composite Index & Ordering *(coming soon)*
 - Key Lookup & Covering Index *(coming soon)*
 
 ---
 
 ### 🔹 Locking, Latching & Concurrency
-- [Locks vs Latches](locking/locks-vs-latches.md)
-- [Deadlocks – Causes & Patterns](locking/deadlocks.md)
+- Locks vs Latches *(coming soon)*
+- Deadlocks – Causes & Patterns *(coming soon)*
 - Isolation Levels & RCSI *(coming soon)*
 
 ---
 
 ### 🔹 TempDB Internals
-- [How SQL Server Uses TempDB](tempdb/tempdb-usage.md)
+- TempDB Usage & Internals *(coming soon)*
 - TempDB Contention & Optimization *(coming soon)*
 
 ---
 
 ### 🔹 Backup & Restore
-- [Backup Types: Full, Diff, Log, Partial](backup-restore/backup-types.md)
+- Backup Types: Full, Differential, Log, Partial *(coming soon)*
 - Restore Strategies *(coming soon)*
 
 ---
 
-### 🔹 Storage, IO & Architecture
-- RAID Levels & SAN vs Local Disk *(coming soon)*
-- IO Patterns in SQL Server *(coming soon)*
-
----
-
 ## 📂 Repository Structure
+
 ```text
 sql-server-knowledge-base/
-│
 ├── README.md
 │
 ├── execution-plans/
-│ ├── README.md
-│ └── execution-plan-properties.md
+│   ├── README.md
+│   └── execution-plan-properties.md
 │
 ├── indexing/
-│ ├── README.md
-│ └── index-design-checklist.md
+│   ├── README.md
+│   └── index-design-checklist.md
 │
 ├── locking/
-│ ├── README.md
-│ └── locks-vs-latches.md
+│   ├── README.md
+│   └── locks-vs-latches.md
 │
 ├── tempdb/
-│ ├── README.md
-│ └── tempdb-usage.md
+│   ├── README.md
+│   └── tempdb-usage.md
 │
 └── backup-restore/
-├── README.md
-└── backup-types.md
+    ├── README.md
+    └── backup-types.md
+
 ```
 
 ---
 
-## 🧩 Cách sử dụng repo này
+## 🧩 How to Use This Repository
 
-- Mỗi **folder** là một chủ đề lớn
-- Mỗi **file `.md`** là một chủ đề cụ thể
-- `README.md` trong folder đóng vai trò **landing page**
-- Dùng như:
-  - Checklist khi debug production
-  - Tài liệu ôn tập
-  - Knowledge base cá nhân / team
+- Each **folder** represents a major SQL Server topic
+- Each **.md file** focuses on a specific subject
+- Folder-level README.md files act as **landing page**
+- Designed to be used as:
+  - A production troubleshooting checklist
+  - A personal reference
+  - A shared team knowledge base
 
 ---
 
-## 🛠️ Công cụ & Nguồn tham khảo
+## 🛠️ Tools & References
 
 - SQL Server Management Studio (SSMS)
 - GitHub Markdown
@@ -99,14 +93,7 @@ sql-server-knowledge-base/
 
 ---
 
-## 📌 Ghi chú
-
-> Nội dung trong repo này mang tính **ghi chú kỹ thuật**, không phải tutorial cơ bản.  
-> Ưu tiên **bản chất – nguyên nhân – trade-off**.
-
----
-
-## 🚀 Kế hoạch mở rộng (Roadmap)
+## 🚀 Roadmap
 
 - [ ] Cardinality Estimation Deep Dive
 - [ ] Parameter Sniffing Patterns
