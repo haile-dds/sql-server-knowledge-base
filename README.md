@@ -23,6 +23,17 @@ A personal knowledge base for **SQL Server internals, performance tuning, indexi
 
 ---
 
+### 🔹 Partitioning & Large Table Management
+- [Monthly Partitioning – End-to-End Guide](partitioning/monthly-partitioning-end-to-end.md)
+  - Partition Function & Partition Scheme design
+  - Filegroup-per-month strategy
+  - Proactive partition maintenance
+  - Late partition recovery (Pattern 3: Historical vs Live data)
+- Sliding Window Pattern *(coming soon)*
+- Partition Switching Best Practices *(coming soon)*
+
+---
+
 ### 🔹 Locking, Latching & Concurrency
 - Locks vs Latches *(coming soon)*
 - Deadlocks – Causes & Patterns *(coming soon)*
@@ -56,6 +67,10 @@ sql-server-knowledge-base/
 │   ├── README.md
 │   └── index-design-checklist.md
 │
+├── partitioning/
+│   ├── README.md
+│   └── monthly-partitioning-end-to-end.md
+|
 ├── locking/
 │   ├── README.md
 │   └── locks-vs-latches.md
